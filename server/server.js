@@ -20,7 +20,7 @@ const db_URI = process.env.db_URI;
 
 //MIDDLEWARE
 const corsOptions = {
-    origin: ['http://localhost:5173', 'https://faculty-connect.vercel.app/'],
+    origin: ['http://localhost:5173', 'https://faculty-connect.vercel.app'],
     optionsSuccessStatus: 200,
 };
   
