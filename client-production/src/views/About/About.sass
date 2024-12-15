@@ -1,0 +1,63 @@
+.about
+    min-height: 110dvh
+    background: rgb(255 237 222)
+    color: #333
+    padding-bottom: 40px
+    &__title
+        margin: 3rem
+        font-size: 5rem
+        font-weight: 500
+        background: var(--pink-gradient)
+        -webkit-background-clip: text
+        color: #ff002d
+        text-align: center
+
+        animation: enter-vertical-fade .5s
+        animation-fill-mode: backwards
+
+        transition: all .5s
+
+        &:hover
+            letter-spacing: 10px
+            cursor: pointer
+
+    &__section
+        margin-inline: 3rem
+        padding: 2rem
+        background-color: rgba(255, 125, 0, 0.09)
+        border-radius: 25px
+        margin-bottom: 40px
+
+    &__subtitle
+        margin-bottom: 1rem
+        font-size: 2.5rem
+        font-weight: 500
+        color: #007BFF
+        margin-left: 2rem
+        margin-top: 1rem
+
+    &__text
+        margin-bottom: 1.5rem
+        font-size: 1.8rem
+        line-height: 1.8
+        text-align: justify
+        margin:2rem
+
+    &__cta
+        margin-inline: 3rem
+        padding: 2rem
+        background-color: rgba(255, 125, 0, 0.09)
+        border-radius: 25px
+        margin-bottom: 0px
+        
+
+    &__link
+        display: inline-block
+        padding: 6px 8px
+        background: #007BFF
+        color: #fff
+        text-decoration: none
+        border-radius: 5px
+
+    &__link:hover
+        background: #0056b3

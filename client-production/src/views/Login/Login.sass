@@ -1,0 +1,61 @@
+@use '../../animations'
+    
+.login
+    min-height: 100vh
+    background: rgb(255, 237, 222)
+    color: white
+    text-align: center
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__title
+        font-size: 6rem
+        font-weight: 500
+        margin-bottom: 3rem
+        color:#ff002d
+        animation: enter-vertical-fade .5s
+        animation-fill-mode: backwards
+
+        transition: all .5s
+
+        &:hover
+            letter-spacing: 10px
+            cursor: pointer
+
+    &__warning
+        font-size: 2.5rem
+        color: #9E9E9E
+        width: 50%
+
+        animation: enter-vertical-fade .5s
+        animation-delay: .5s
+        animation-fill-mode: backwards
+
+    &__options
+        display: flex
+
+        animation: enter-vertical-fade .5s
+        animation-delay: 1s
+        animation-fill-mode: backwards
+        transform: none !important
+
+    &__inputs
+        animation: enter-vertical-fade .5s
+        animation-delay: 1s
+        animation-fill-mode: backwards
+        transform: none !important
+
+    &__error
+        color: red
+        font-weight: 300
+        font-size: 1.4rem
+        margin: 1rem
+
+        animation: enter-vertical-fade .5s
+
+    &__option
+        padding-inline: 3rem
+        

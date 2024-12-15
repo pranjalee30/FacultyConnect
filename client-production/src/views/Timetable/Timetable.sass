@@ -1,0 +1,105 @@
+.timetable
+    min-height: 150vh
+    background: rgb(255, 237, 222)
+    color: black
+
+    &__title
+        margin: 4rem 2rem
+        font-size: 4rem
+        font-weight: 500
+
+        background: var(--pink-gradient)
+        -webkit-background-clip: text
+        background-clip: text
+        color: #ff009e
+
+        animation: enter-fade .5s 
+        animation-fill-mode: backwards
+
+    &__panel
+        background: rgb(255 125 0 / 9%)
+        padding: 2rem
+        margin: 2rem
+        border-radius: 25px
+
+        animation: enter-fade .5s .5s
+        animation-fill-mode: backwards
+        transform: none !important
+
+    &__day
+        font-weight: 500
+        margin: 1rem 2rem
+        font-size: 3rem
+
+        animation: enter-fade .5s 1s
+        animation-fill-mode: backwards
+
+        &:hover
+            transform: translateX(10px)
+            
+    &__timeslot
+        font-weight: 500
+        font-size: 2rem
+        margin: 1rem 7rem
+        animation: enter-vertical-fade .5s
+
+        &:hover
+            transform: translateX(10px)
+
+    &__location-input, &__location
+        margin: 0
+        margin-left: 10rem
+        padding: 1rem
+
+        animation: enter-vertical-fade .5s
+
+    &__location
+        font-size: 1.6rem
+        font-weight: 500
+
+    &__location-btn
+        padding: 1.5rem
+        font-size: 1.2rem
+        animation: enter-fade .5s 
+        animation-fill-mode: backwards
+
+    &__day, &__timeslot, &__location-btn
+        transition: all .2s
+
+        &:hover
+            cursor: pointer
+
+    &__btn
+        text-align: center
+        padding: 1.4rem
+        margin: 1.5rem 
+
+        animation: enter-vertical-fade .5s 1.5s
+        animation-fill-mode: backwards
+
+    &__error
+        font-size: 3rem
+        color: red
+        margin: 3rem
+        font-weight: 500
+
+    &__initiate-btn
+        margin-inline: 4rem
+
+    &__loading-container
+        height: 100dvh
+        display: flex
+        background: #000000
+        color: #ffffff
+        justify-content: center
+        align-items: center
+        font-size: 2rem
+        font-weight: 500
+
+    &__absent-btn
+        padding: 1.2rem
+        background: red
+
+.absent__warn
+    color: red
+    font-size: 2rem

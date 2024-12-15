@@ -1,0 +1,126 @@
+.contact
+    min-height: 100vh
+    background: rgb(255 237 222)
+    color: #333
+    padding-bottom: 40px
+
+    &__title
+        margin: 3rem
+        font-size: 5rem
+        font-weight: 500
+        background: var(--pink-gradient)
+        -webkit-background-clip: text
+        color: #ff002d
+        text-align: center
+
+        animation: enter-vertical-fade .5s
+        animation-fill-mode: backwards
+
+        transition: all .5s
+
+        &:hover
+            letter-spacing: 10px
+            cursor: pointer
+
+    &__developer
+        margin: 3rem
+        padding: 2rem
+        background-color: rgba(255, 125, 0, 0.09)
+        border-radius: 25px
+        margin-bottom: 40px
+        text-align: center
+    
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        text-align: left
+
+    &__text-container
+        flex: 1
+        margin-right: 1rem
+        margin-left: 4rem
+        margin-top:2rem
+        padding-right: 2rem
+
+    &__subtitle
+        font-size: 2.5rem
+        font-weight: 500
+        color: #007BFF
+        margin-bottom: 1rem
+        margin-top: 2rem
+        text-align: center
+        
+    &__image
+        width: 250px
+        height: 250px
+        border-radius: 50%
+        object-fit: cover
+        margin: 1rem auto
+        margin-right: 4rem
+
+
+    &__text
+        font-size: 1.8rem
+        line-height: 1.8
+        color: #333
+        text-align: justify
+        margin-bottom: 1rem
+
+    &__social
+        display: flex
+        justify-content: center
+        margin-top: 1.5rem
+
+    &__social-link
+        font-size: 3rem
+        color: #007BFF
+        text-decoration: none
+        padding: 10px
+
+    &__social-link:hover
+        color: #0056b3
+
+    &__form
+        margin: 3rem
+        padding: 2rem
+        background-color: rgba(255, 125, 0, 0.09)
+        border-radius: 25px
+
+    &__field
+        margin-bottom: 1.5rem
+
+    &__field label
+        font-size: 1.6rem
+        font-weight: 500
+        color: #007BFF
+        display: block
+        margin-bottom: 0.5rem
+
+    &__field input,
+    &__field textarea
+        width: 100%
+        padding: 0.75rem
+        font-size: 1.4rem
+        border: 1px solid #ccc
+        border-radius: 5px
+
+    &__field input:focus,
+    &__field textarea:focus
+        border-color: #007BFF
+        outline: none
+
+    &__btn
+        display: inline-block
+        padding: 10px 20px
+        background: #007BFF
+        color: #fff
+        font-size: 1.4rem
+        font-weight: 500
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        transition: background 0.3s
+
+    &__btn:hover
+        background: #0056b3

@@ -1,0 +1,69 @@
+.signup
+    min-height: 140vh
+    background: rgb(255, 237, 222)
+
+    &__panel
+        background: rgb(255 108 0 / 14%)
+        padding: 3rem 1.5rem 
+        text-align: center
+        width: 40%
+        margin: 5rem auto
+        border-radius: 15px
+
+        animation: enter-fade .2s
+        animation-fill-mode: backwards
+        transform: none !important
+
+    &__user-icon
+        color: white
+        font-size: 6rem
+
+        animation: enter-fade .2s .2s
+        animation-fill-mode: backwards
+        transform: none !important
+
+    &__input-panel
+        display: flex
+        flex-direction: column
+        
+        animation: enter-vertical-fade .2s .4s
+        animation-fill-mode: backwards
+            
+
+    &__error
+        color: red
+        font-weight: 300
+        font-size: 1.4rem
+        margin: 1rem
+
+        animation: enter-vertical-fade .5s
+
+    &__options
+        margin: 1rem auto
+
+        animation: enter-fade .2s .6s
+        animation-fill-mode: backwards
+        transform: none !important
+        
+    &__option
+        margin: .8rem
+        padding: 2rem
+        border: none
+        border-radius: 15px
+        color: white
+        font-weight: 300
+        width: 40%
+        transition: all .2s
+
+        &:hover
+            transform: translateY(-4px)
+            cursor: pointer
+
+        &:active
+            transform: translateY(-2px)
+
+.o-1
+    background: var(--blue-gradient)
+.o-2
+    background: #006095
+    

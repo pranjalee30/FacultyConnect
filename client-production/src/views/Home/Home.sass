@@ -1,0 +1,101 @@
+@use '../../_animations'
+    
+.home
+    min-height: 100vh
+    background-color: rgb(255 237 222)
+    color: #f55874
+    padding-inline: 2rem
+
+    display: flex
+    align-items: center
+    justify-content: space-between
+    
+    // RIGHT PANEL
+    &__text-panel
+        margin-left: 5rem
+
+    &__title
+        font-size: 8rem
+        font-weight: 500
+        transition: all .5s
+        padding: 0.5rem
+
+       
+
+        &:hover
+            letter-spacing: 10px
+
+    &__subtitle-text
+        font-size: 3rem
+        font-weight: 500
+        margin-top: 5rem
+
+        color: black
+
+        animation: enter-fade .8s
+        animation-delay: .5s
+        animation-fill-mode: backwards
+
+    &__notice
+        margin-top: 5rem
+        font-size: 2rem
+        font-weight: 300
+        transform: none !important
+
+        color: black
+        animation: enter-fade .8s
+        animation-delay: 1s
+        animation-fill-mode: backwards
+
+    // LEFT PANEL
+    &__options
+        margin-right: 10rem
+        display: flex
+        flex-direction: column
+        background-color: #ff6c0024
+        justify-content: center
+        align-items: center
+        padding: 4rem 2rem
+        border-radius: 25px
+        text-align: left
+        animation: enter-fade .8s
+        animation-delay: 1.5s
+        animation-fill-mode: backwards
+        transform: none !important 
+
+    &__start
+        background: var(--blue-gradient)
+
+    &__login
+        background: #ff7700a6
+
+    &__about
+        margin: 2rem
+        font-weight: 400
+
+        transition: all .2s
+
+        &:hover
+            text-decoration: underline solid 2px white
+            cursor: pointer
+
+.btn
+    padding: 2rem
+    margin: 1.5rem 1rem
+    outline: none
+    border: none
+    border-radius: 10px
+    color: white
+    width: 95%
+
+    transition: all .2s
+
+    &:hover
+        transform: translateY(-4px)
+        cursor: pointer
+
+    &:active
+        transform: translateY(-2px)
+
+        
+        

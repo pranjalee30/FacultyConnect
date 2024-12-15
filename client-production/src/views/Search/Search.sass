@@ -1,0 +1,148 @@
+.search
+    min-height: 100vh
+    background: rgb(255 237 222)
+    color: #ff002d
+    text-align: center
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__title
+        font-size: 6rem
+        font-weight: 500
+        margin: 1rem
+
+        animation: enter-vertical-fade .5s
+        animation-fill-mode: backwards
+
+        transition: all .5s
+
+        &:hover
+            letter-spacing: 10px
+            cursor: pointer
+
+    &__subtitle
+        font-size: 2.5rem
+        color: #9E9E9E
+
+        animation: enter-vertical-fade .5s
+        animation-delay: .5s
+        animation-fill-mode: backwards
+
+    &__inputs
+        display: flex
+        margin: 2rem
+
+    &__dropdown
+        padding: 1.3rem
+        font-size: 1.4rem
+        margin-inline: 2rem
+        text-align: center
+        background: #006095
+        border: none
+        border-radius: 22px
+        color: white
+
+    &__btn
+        animation: enter-vertical-fade .5s 1.5s
+        animation-fill-mode: backwards
+        font-size: 1.4rem
+        border-radius:22px
+        padding:1.3rem
+        font-weight: 400
+        width: 109px
+
+
+.result
+    margin: 2rem
+    padding: 2rem
+    background: #ff7d0017
+    border-radius: 15px
+    text-align: left
+
+    width: 50%
+
+    animation: enter-fade .5s
+    animation-fill-mode: backwards 
+    transform: none !important
+
+    &__title
+        font-size: 1.5rem
+        font-weight: 500
+        margin: 1rem 0
+
+        animation: enter-fade .5s .2s
+        animation-fill-mode: backwards 
+        transform: none !important 
+
+    &__name
+        font-size: 3rem
+        font-weight: 500
+        margin: 1rem 0
+
+        animation: enter-vertical-fade .5s
+        animation-fill-mode: backwards 
+
+    &__dayname, &__location, &__timeslot
+        font-size: 2rem
+        font-weight: 500
+        margin-inline: 2rem
+
+    &__dayname
+        margin-top: 4rem
+
+        animation: enter-vertical-fade .5s
+        animation-fill-mode: backwards 
+
+    &__timeslot
+        margin-top: 1rem
+
+        animation: enter-vertical-fade .5s
+        animation-fill-mode: backwards 
+
+    &__location
+        margin-top: 3rem
+        font-size: 3rem
+
+        animation: enter-fade .5s
+        animation-fill-mode: backwards 
+        transform: none !important
+
+    &__main
+        display: flex
+
+    &__status, &__absent
+        font-size: 2rem
+        color: green
+        margin-left: auto
+        font-weight: 500
+
+    &__absent
+        color: red
+
+
+.d-2
+    animation: enter-fade .5s 1s
+    transform: none !important
+    animation-fill-mode: backwards
+
+.d-1
+    animation: enter-fade .5s 1s
+    animation-fill-mode: backwards
+
+.d-3
+    animation: enter-fade-right .5s 1s
+    animation-fill-mode: backwards
+
+hr
+    animation: enter-fade .5s .4s
+    animation-fill-mode: backwards 
+    transform: none !important
+
+
+
+
+
+

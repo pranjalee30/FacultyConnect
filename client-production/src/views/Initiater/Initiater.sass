@@ -1,0 +1,58 @@
+@use '../../animations'
+
+.initiater
+    
+    &__panel
+        min-height: 90vh
+        background: rgb(255, 237, 222)
+        color: black
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__title
+        font-size: 5rem
+        font-weight: 500
+        margin: 2rem
+
+        animation: enter-fade .8s
+        transform: none !important
+        animation-fill-mode: backwards 
+
+    &__name
+        font-weight: 700
+        background: var(--pink-gradient)
+        -webkit-background-clip: text
+        background-clip: text
+        color: transparent 
+
+        animation: enter-fade .8s
+        animation-delay: .8s
+        transform: none !important
+        animation-fill-mode: backwards 
+
+    &__subtitle
+        font-weight: 300
+        font-size: 2rem
+        margin: 2rem
+        color: #929292
+
+        animation: enter-vertical-fade .5s
+        animation-delay: 1.6s
+        animation-fill-mode: backwards 
+
+    &__button
+        margin: 3rem
+        font-weight: 500
+
+        animation: enter-vertical-fade .5s
+        animation-delay: 1.6s
+        animation-fill-mode: backwards 
+
+.loader
+    height: 100dvh
+    display: flex
+    justify-content: center
+    align-items: center

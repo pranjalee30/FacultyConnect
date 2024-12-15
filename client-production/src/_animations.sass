@@ -1,0 +1,61 @@
+@keyframes enter-vertical-fade
+    0%
+        transform: translateY(-8px)
+        opacity: 0
+    100%
+        transform: translate(0px)
+        opacity: 100%
+
+@keyframes enter-fade
+    0%
+        opacity: 0
+        transform: translateX(-30px)
+    100%
+        opacity: 100%
+        transform: translate(0px)
+
+@keyframes background-cycle
+    0%
+        background: var(--blue-gradient)
+        -webkit-background-clip: text
+        background-clip: text
+        color: transparent 
+    33%
+        background: var(--pink-gradient)
+        -webkit-background-clip: text
+        background-clip: text
+        color: transparent 
+    66%
+        background: var(--yellow-gradient)
+        -webkit-background-clip: text
+        background-clip: text
+        color: transparent 
+    100%
+        background: var(--blue-gradient)
+        -webkit-background-clip: text
+        background-clip: text
+        color: transparent 
+
+@keyframes expand-color-change
+    0%
+        letter-spacing: 0px
+    33%
+        letter-spacing: 20px
+        background: #fd00f9
+    100%
+        background: black
+        letter-spacing: 0px
+
+@keyframes enter-fade-right 
+    0%
+        opacity: 0
+        transform: translateX(30px)
+    100%
+        opacity: 100%
+        transform: translate(0px)
+
+        
+
+@export enter-vertical-fade
+@export enter-fade
+@export background-cycle

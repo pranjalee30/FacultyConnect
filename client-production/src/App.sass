@@ -1,0 +1,77 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+html
+    scroll-behavior: smooth
+    box-sizing: border-box
+    font-size: 62.5%
+    font-family: 'Inter', sans-serif
+    overflow-x: hidden 
+
+:root
+    --blue-gradient: linear-gradient(to right, #0090F8, #00E0FF)
+    --pink-gradient: linear-gradient(to right, #ff00d9, #e600ff)
+    --yellow-gradient: linear-gradient(to right, #fbff00, #fd9400)
+
+.grey-inputs
+    background: rgb(255 119 0 / 65%)
+    outline: none
+    border: none
+    padding: 3rem 
+    margin: 1rem 
+    border-radius: 10px
+
+    text-align: center
+    color: white
+    font-size: 2rem
+
+    transition: all .2s
+
+    &::-webkit-input-placeholder
+        text-align: center
+        color: #F6F6F6
+        font-size: 2rem
+        font-weight: 500
+
+    &:first-child
+        margin-top: 3rem
+
+    &:focus
+        transform: scale(1.1)
+
+.gradient-btn
+    margin: .8rem
+    padding: 2rem
+    border: none
+    border-radius: 15px
+    color: white
+    font-weight: 300
+    transition: all .2s
+    background: var(--blue-gradient)
+
+    &:hover
+        transform: translateY(-4px)
+        cursor: pointer
+
+    &:active
+        transform: translateY(-2px)
+
+.grey-btn
+    margin: .8rem
+    padding: 2rem
+    border: none
+    border-radius: 15px
+    color: white
+    font-weight: 300
+    transition: all .2s
+    background: #006095
+
+    &:hover
+        transform: translateY(-4px)
+        cursor: pointer
+
+    &:active
+        transform: translateY(-2px)
+
