@@ -1,5 +1,5 @@
 // PACKAGE IMPORTS
-import  express  from "express";
+import express  from "express";
 import mongoose from "mongoose";
 import nodemailer from "nodemailer"
 import bodyParser from "body-parser";
