@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
         <div className="navbar">
             <h1 className="navbar__title" onClick={() => navigate('/')}>
-                CampusLocator
+                Faculty Connect
             </h1>
 
             <ul className="navbar__options">

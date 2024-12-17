@@ -1,4 +1,4 @@
-import { React, Fragment } from 'react'
+import { React} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
@@ -12,10 +12,10 @@ const Home = () => {
     <>
         <div className="home">
             <div className="home__text-panel">
-                <h1 className="home__title">CampusLocator</h1>
+                <h1 className="home__title">Faculty Connect</h1>
 
                 <div className="home__subtitle">
-                    <h3 className="home__subtitle-text">Teachers. Professors. Faculty.<br />All at One Place.</h3>
+                    <h3 className="home__subtitle-text">Teachers, Professors, Faculty.<br />All at One Place.</h3>
                 </div>
 
                 <div className="home__notice">
@@ -24,10 +24,10 @@ const Home = () => {
             </div>
 
             <div className="home__options">
-                <button className="home__start btn" onClick={() => navigate('/proffinder')}>START USING CAMPUSLOCATOR</button>
+                <button className="home__start btn" onClick={() => navigate('/proffinder')}>START USING FACULTY CONNECT</button>
                 <button className="home__login btn" onClick={() => navigate('/login')}>STAFF LOGIN <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
                 <button className="home__login btn" onClick={() => navigate('/signup')}>STAFF SIGN UP <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
-                <h3 className="home__about" onClick={() => navigate('/about')}>About CampusLocator <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></h3>
+                <h3 className="home__about" onClick={() => navigate('/about')}>About Faculty Connect <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></h3>
             </div>
         </div>
     </>

@@ -51,7 +51,7 @@ const Search = () => {
         <Navbar />
         <div className="search">
             <div className="search__header">
-                <h1 className="search__title" onClick={() => navigate('/')}>CampusLocator</h1>
+                <h1 className="search__title" onClick={() => navigate('/')}>Faculty Connect</h1>
                 <div className="search__subtitle">
                     <p className="search__subtitle-text">Select from below to fetch data</p>
                 </div>

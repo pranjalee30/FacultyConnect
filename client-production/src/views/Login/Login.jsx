@@ -33,7 +33,7 @@ const Login = () => {
     return (
     <>
         <div className="login">
-            <h1 className="login__title" onClick={() => navigate('/')}>CampusLocator</h1>
+            <h1 className="login__title" onClick={() => navigate('/')}>Faculty Connect</h1>
             <div className="login__warning">
                 <p className="login__warning-text">ProfFinder Login is only for staff and teachers. Please do not misuse the service.</p>
             </div>
